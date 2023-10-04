@@ -1,20 +1,110 @@
 <!DOCTYPE html>
-<! -- Sting wideget editor at https://chat.peakd.com/widgeteditor -->
+<!-- Sting wideget editor at https://chat.peakd.com/widgeteditor -->
 <html>
   <head>
     <script src="stwidget.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sting.on.fleek.co</title>
+    <title>sting.on.fleek.co</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    body {
+      background: #3b3b3b;
+      max-width: 100%;
+      margin: 0px auto;
+      padding: 0 0px;
+      font: 18px/1.5 -apple-system, BlinkMacSystemFont, /* MacOS and iOS */
+                   'avenir next', avenir, /* MacOS and iOS */
+                   'Segoe UI', /* Windows */
+                   'lucida grande', /* Older MacOS */
+                   'helvetica neue', helvetica, /* Older MacOS */
+                   'Fira Sans', /* Firefox OS */
+                   roboto, noto, /* Google stuff */
+                   'Droid Sans', /* Old Google stuff */
+                   cantarell, oxygen, ubuntu, /* Linux stuff */
+                   'franklin gothic medium', 'century gothic', /* Windows stuff */
+                   'Liberation Sans', /* Linux */
+                   sans-serif; /* Everything else */;
+      color: #b3b3b3; /* This changes the font color */
+    }
+
+supersize {  /* this is fancified text, but it can be named as anything */
+    font-style: normal;
+    font-size: 120%;
+    color: #ff8c00;
+    text-transform: uppercase;
+}
+     
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+h1 {
+  font-size: 2.2em;
+  text-align: center;
+}
+h2 {
+  font-size: 1.8em;
+  border-bottom: solid 0.1rem firebrick;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+h5 {
+  font-size: 1.2em;
+  font-style: italic;
+}
+h6 {
+  font-size: 1.1em;
+  margin-bottom: 0.5rem;
+  color: #555555;
+}
+    img.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+}
+    }</style>
+
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
   </head>
   <body> 
-    <p>Sting.on.fleek.co</p>
+    <!-- <p>Sting.on.fleek.co</p> -->
     <div id="customDiv"></div>
-    <p>Sting.on.fleek.co</p>
+    <p>Resize window at bottom right corner.</p>
     <script>
         var stwidget = new StWidget('https://chat.peakd.com/t/hive-116655/0');
         stwidget.properties = { "requireLogin": false, "sidebar": 2};    
-        var element = stwidget.createElement('100%', '600px', false/*overlay*/, true /*resizable*/);
+        var element = stwidget.createElement('100%', '550px', false/*overlay*/, true /*resizable*/);
 
         document.getElementById("customDiv").appendChild(element);
     </script>
